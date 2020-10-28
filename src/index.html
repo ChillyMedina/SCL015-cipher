@@ -10,13 +10,25 @@
   <body>
     <div class= "main-wrap" id="root">
       <h1>LISTA DE TAREAS DIARIAS</h1>
+      <!---------------NOMBRE--------------->
       <section id="name" class="panel" hidden>
         <div>
             <h2>Ordena tus tareas/ideas y deja 1 como un mensaje cifrado</h2>          
             <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
             <button class="button" id= "nameButton" onclick="guardarNombre()">Aceptar</button>
         </div>
-    </section>
+      </section>
+       <!------------------------------Saludo y Offset------------------------------>
+      <section id="Offset" class="panel" hidden>
+        <div id="inicio" class="pantalla">
+             <h1>Hola <span id="nombre-usuario"></span></h1>
+             <h4>Escoge un número entre el 1 y el 26 para cifrar tus mensajes.</h4>
+              <div class="flex">
+                <input type="number" id="quantity" name="quantity" min="1" max="26" placeholder="1-26" required>
+                <button class="button" id= "numberButton" onclick="guardarQuantity()">Aceptar</button>
+              </div>  
+        </div>
+      </section>
     </div>
     <script src="index.js" type="module"></script>
   </body>
