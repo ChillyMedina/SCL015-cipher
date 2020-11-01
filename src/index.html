@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class= "main-wrap" id="root">
       <h1>LISTA DE TAREAS DIARIAS</h1>
       <!---------------NOMBRE--------------->
-        <div>
+      <section id="nombreblah" class="panel"> 
+      <div>
             <h2>Ordena tus tareas/ideas y deja 1 como un mensaje cifrado</h2>          
             <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
-            <button class="button" id= "nameButton" onclick="guardarNombre()">Aceptar</button>
+            <button class="button" id= "nameButton">Aceptar</button>
         </div>
-      <!------------------------------Saludo y Offset------------------------------>
+      </section>
+      <!----------------Saludo y Offset---------------->
+      <section id="offset" class="panel" hidden>
         <div id="inicio" class="pantalla">
              <h1>Hola <span id="nombre-usuario"></span></h1>
              <h4>Escoge un número entre el 1 y el 26 para cifrar tus mensajes.</h4>
@@ -25,6 +29,18 @@
                 <button class="button" id= "numberButton" onclick="guardarQuantity()">Aceptar</button>
               </div>  
         </div>
+      </section>
+      <!----------------Lista---------------->
+      <section id="lista" class="panel" hidden>
+      <div style="position:static;">
+          <input type="text" id="valor">
+          <button id="boton" >Agregar</button>
+        </div>
+        <div class="listillas">
+          <ul id="listaChilly">
+          </ul>
+        </div>
+      </section>  
     </div>
     <script src="index.js" type="module"></script>
   </body>

@@ -2,3 +2,19 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background:url(https://i.ibb.co/sgwn8mf/front-view-minimalistic-office-desk-decor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
+
+
+.listillas {
+    display: inline-block;
+}
