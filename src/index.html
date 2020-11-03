@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class= "main-wrap" id="root">
-      <h1>LISTA DE TAREAS DIARIAS</h1>
-      <img src="img/UP.png" alt="">
-      <!---------------NOMBRE--------------->
-      <section id="nombreblah" class="panel"> 
-      <div>
-            <h2>Ordena tus tareas/ideas y deja 1 como un mensaje cifrado</h2>          
-            <img src="img/Yellow.png" alt="">
-            <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
-            <img src="img/Sticky Pink.png" alt="">
-            <button class="button" id= "namebutton">Aceptar</button>
-            <img src="img/Boton Purple.png" alt="">
-        </div>
-      </section>
-      <!----------------Saludo y Offset---------------->
-      <section id="offset" class="panel" hidden>
-        <div id="inicio" class="pantalla">
-             <h1>Hola <span id="nombre-usuario"></span></h1>
-             <h4>Escoge un número entre el 1 y el 26 para cifrar tus mensajes.</h4>
-              <div class="flex">
-                <input type="number" id="quantity" name="quantity" min="1" max="26" placeholder="1-26" required>
-                <button class="button" id= "numberbutton" onclick="guardarQuantity()">Aceptar</button>
-              </div>  
-        </div>
-      </section>
-      <!----------------Lista---------------->
-      <section id="lista" class="panel" hidden>
-      <div style="position:static;">
-          <input type="text" id="valor">
-          <button id="boton" >Agregar</button>
-        </div>
-        <div class="listillas">
-          <ul id="listaChilly">
-          </ul>
-        </div>
-      </section>  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-wrap" id="root">
+    <div class="main-note">
+      <div class="main-noteh1">
+        <h1>LISTA DE TAREAS DIARIAS</h1>
+      </div>
     </div>
-    <script src="index.js" type="module"></script>
-  </body>
+    <!---------------NOMBRE--------------->
+    <section id="nombreblah" class="panel">
+      <div class="nombreblah-top">
+        <img src="img/Yellow.png" alt="">
+        <h2>Ordena tus tareas/ideas</h2>
+        <h2> y deja 1 como un mensaje cifrado.</h2>
+      </div>
+      <div class="nombreblah-bottom">
+        <div class="bottom-left">
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="bottom-right">
+          <button class="button" id="namebutton">Aceptar</button>
+          <img src="img/boton-purple.png" alt="">
+        </div>
+      </div>
+      <div>
+      </div>
+    </section>
+    <!----------------Saludo y Offset---------------->
+    <section id="offset" class="panel" hidden>
+      <div id="inicio" class="pantalla">
+        <h1>Hola <span id="nombre-usuario"></span></h1>
+        <h4>Escoge un número entre el 1 y el 26 para cifrar tus mensajes.</h4>
+        <div class="flex">
+          <input type="number" id="quantity" name="quantity" min="1" max="26" placeholder="1-26" required>
+          <button class="button" id="numberbutton" onclick="guardarQuantity()">Aceptar</button>
+        </div>
+      </div>
+    </section>
+    <!----------------Lista---------------->
+    <section id="lista" class="panel" hidden>
+      <div style="position:static;">
+        <input type="text" id="valor">
+        <button id="boton">Agregar</button>
+      </div>
+      <div class="listillas">
+        <ul id="listaChilly">
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
