@@ -9,12 +9,24 @@ body {
     background-attachment: fixed;
     font-family: 'Roboto Mono', monospace;
 }
-
-
-
-
-
-
+h1 {
+    text-align: center;
+    color: rgb(21, 22, 28);
+}
+h2 {
+    text-align: center;
+    color: rgb(21, 22, 28);
+}
+#nombre {
+    text-align: center;
+    color: rgb(21, 22, 28);
+    font-family: 'Roboto Mono', monospace;
+}
+#nameButton {
+    text-align: center;
+    color: rgb(21, 22, 28);
+    font-family: 'Roboto Mono', monospace;
+}
 .listillas {
     display: inline-block;
 }
