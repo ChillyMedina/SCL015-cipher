@@ -4,16 +4,16 @@ import cipher from "./cipher.js";
 document.getElementById("namebtn")
         .addEventListener("click", function () {
     document.getElementById("nombre").hidden = true;
-    document.getElementById("offset").hidden = false;
+    document.getElementById("numero").hidden = false;
   }, false);
 
   //---------------GUARDAR NOMBRE---------------
-var guardarNombre = () => {
+  var guardarNombre = () => {
     let input = document.getElementById("nombretxt");
     nombreDeUsuario = input.value;
-    let nombreUsuario = document.getElementById("nombre-usuario");
+     let nombreUsuario = document.getElementById("nombre-usuario");
     nombreUsuario.innerHTML = nombreDeUsuario;
-}
+  }
 
 //---------------GUARDAR NUMERO---------------
 var guardarQuantity = () => {
