@@ -4,11 +4,11 @@
 }
 
 body {
-  background: url(https://i.ibb.co/sgwn8mf/front-view-minimalistic-office-desk-decor.jpg);
+  background: url(https://i.ibb.co/9Hnf0QR/deskbackground.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 0 -250px;
+  background-position: bottom;
   font-family: "Roboto Mono", monospace;
 }
 h1 {
@@ -40,7 +40,7 @@ h2 {
   border: 1px solid rgb(90, 90, 90);
 }
 
-#namebutton {
+#namebtn {
   text-align: center;
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
@@ -55,7 +55,7 @@ h2 {
   outline: none;
 }
 
-#namebutton:hover {
+#namebtn:hover {
   transform: rotate(-5deg) translateY(-10px) scale(1.02);
   color: rgb(34, 36, 46);
   cursor: pointer;
@@ -92,14 +92,14 @@ h2 {
   margin-left: 35px;
 }
 
-#nombreblah.panel {
+.nombre__wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.nombreblah-top {
+.nombre-top {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
@@ -109,19 +109,19 @@ h2 {
   height: 280px;
 }
 
-.nombreblah-top img {
+.nombre-top img {
   position: absolute;
   top: 0;
   z-index: -1;
 }
 
-.nombreblah-top h2 {
+.nombre-top h2 {
   margin-top: -80px;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 30px;
 }
-.nombreblah-bottom {
+.nombre-bottom {
   width: 100%;
   display: flex;
   flex-direction: row;
