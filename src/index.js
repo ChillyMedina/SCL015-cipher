@@ -7,8 +7,15 @@ document.getElementById("namebtn")
     document.getElementById("numero").hidden = false;
   }, false);
 
+//---------------PASO 2 A 3---------------
+document.getElementById("numberbutton")
+        .addEventListener("click", function () {
+    document.getElementById("numero").hidden = true;
+    document.getElementById("lista").hidden = false;
+  }, false);
+
   //---------------GUARDAR NOMBRE---------------
-  var guardarNombre = () => {
+  const guardarNombre = () => {
     let input = document.getElementById("nombretxt");
     nombreDeUsuario = input.value;
      let nombreUsuario = document.getElementById("nombre-usuario");
@@ -16,11 +23,11 @@ document.getElementById("namebtn")
   }
 
 //---------------GUARDAR NUMERO---------------
-var guardarQuantity = () => {
-  let input = document.getElementById("numero");
-  nombreDeUsuario = input.value;
-  let nombreUsuario = document.getElementById("nombre-usuario");
-  nombreUsuario.innerHTML = nombreDeUsuario;
+  const guardarQuantity= () => {
+    let input = document.getElementById("numero");
+    nombreDeUsuario = input.value;
+      let nombreUsuario = document.getElementById("");
+    nombreUsuario.innerHTML = nombreDeUsuario;
 }
 
 //---------------LISTA---------------

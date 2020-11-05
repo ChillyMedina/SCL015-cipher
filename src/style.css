@@ -11,14 +11,17 @@ body {
   background-position: bottom;
   font-family: "Roboto Mono", monospace;
 }
+/* Nombre */
 h1 {
   text-align: center;
   color: rgb(21, 22, 28);
 }
+
 h2 {
   text-align: center;
   color: rgb(21, 22, 28);
 }
+
 #nombretxt {
   text-align: center;
   color: rgb(21, 22, 28);
@@ -33,7 +36,7 @@ h2 {
   outline: none;
 }
 
-#nombre:focus {
+#nombretxt:focus {
   background: rgb(255, 230, 241);
   border: 1px solid rgb(90, 90, 90);
 }
@@ -44,7 +47,6 @@ h2 {
   font-family: "Roboto Mono", monospace;
   border: none;
   background: transparent;
-
   font-size: 21px;
   letter-spacing: 5px;
   transform: rotate(-5deg) translateY(-10px) scale(1) translatez(0);
@@ -59,17 +61,12 @@ h2 {
   cursor: pointer;
 }
 
-.listillas {
-  display: inline-block;
-}
-
 .main-note {
   width: 100%;
   height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding-top: 20px;
 }
 
@@ -159,4 +156,161 @@ h2 {
 .bottom-right img {
   position: absolute;
   z-index: -1;
+}
+
+/* Saludo y Numero */
+
+.numero__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.numero-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+}
+
+.numero-top img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.numero-top h3 {
+  margin-top: -80px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 30px;
+}
+
+.numero-top h4 {
+  margin-top: -80px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.numero-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 550px;
+  padding-bottom: 150px;
+}
+
+.bottom-left,
+.bottom-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.bottom-left {
+  background: url(img/sticky-pink.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 60%;
+}
+
+.bottom-right {
+  position: relative;
+}
+
+.bottom-right a {
+  text-decoration: none;
+}
+
+.bottom-right img {
+  position: absolute;
+  z-index: -1;
+}
+
+#quantity {
+  width: 70px;
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  height: 50px;
+  background: transparent;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: all 0.8s ease;
+  border-radius: 4px;
+  outline: none;
+}
+
+#numberbutton {
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  border: none;
+  background: transparent;
+  font-size: 21px;
+  letter-spacing: 5px;
+  transform: rotate(-5deg) translateY(-10px) scale(1) translatez(0);
+  transition: all 0.3s cubic-bezier(0.09, 0, 0, 0.39);
+  backface-visibility: hidden;
+  outline: none;
+}
+
+#numberbutton:hover {
+  transform: rotate(-5deg) translateY(-10px) scale(1.02);
+  color: rgb(34, 36, 46);
+  cursor: pointer;
+}
+
+/* Lista */
+
+#lista {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+}
+
+#valor {
+  width: 300px;
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  height: 40px;
+  background: transparent;
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: all 0.8s ease;
+  border-radius: 4px;
+  outline: none;
+}
+
+#lista__wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 200px;
+}
+
+#lista__wrap img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listillas {
+  display: inline-block;
 }
