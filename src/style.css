@@ -293,14 +293,15 @@ h2 {
   transition: all 0.8s ease;
   border-radius: 4px;
   outline: none;
+  margin-left: 120px;
 }
 
-#lista__wrap{
+#lista__wrap {
   width: 100%;
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   height: 200px;
 }
@@ -313,4 +314,34 @@ h2 {
 
 .listillas {
   display: inline-block;
+}
+
+#cifrarbtn {
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  border: none;
+  background: transparent;
+  font-size: 21px;
+  letter-spacing: 5px;
+}
+
+#cifrarbtn:hover {
+  color: rgb(34, 36, 46);
+  cursor: pointer;
+}
+
+#descifrarbtn {
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  border: none;
+  background: transparent;
+  font-size: 21px;
+  letter-spacing: 5px;
+}
+
+#descifrarbtn:hover {
+  color: rgb(34, 36, 46);
+  cursor: pointer;
 }

@@ -33,7 +33,7 @@
             <input type="text" id="nombretxt" placeholder="Ingresa tu nombre" required>
           </div>
           <div class="bottom-right">
-            <button class="button" id="namebtn" onclick="guardarNombre()">Aceptar</button>
+            <button class="button" id="namebtn">Aceptar</button>
             <img src="img/boton-purple.png" alt="">
           </div>
         </div>
@@ -52,7 +52,7 @@
             <input type="number" id="quantity" name="quantity" min="1" max="26" placeholder="1-26" required>
           </div>
           <div class="bottom-right">
-            <button class="button" id="numberbutton" onclick="guardarQuantity()">Aceptar</button>
+            <button class="button" id="numberbutton">Aceptar</button>
             <img src="img/boton-purple.png" alt="">
           </div>
         </div>   
@@ -61,14 +61,19 @@
     <!----------------Lista---------------->
     <section id="lista" class="panel" hidden>
       <div id="lista__wrap">
-        <div style="position:static;">
+        <div>
           <input type="text" id="valor">
           <button id="boton">Agregar</button>
           <img src="img/todolist.png" alt="">
         </div>
-          <div class="listillas">
-          <ul id="listaChilly">
-          </ul>
+        <div class="listillas">
+          <ul id="listaChilly"></ul>
+        </div>
+        <div class="bttm-left">
+          <button class="button" id="cifrarbtn">Cifrar</button>
+        </div>
+        <div class="bttm-right">
+          <button class="button" id="descifrarbtn">Descifrar</button>
         </div>
       </div>
     </section>
