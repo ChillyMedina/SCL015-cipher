@@ -67,7 +67,7 @@ h2 {
 #namebtn:hover {
   transform: rotate(-5deg) translateY(-10px) scale(1.02);
   color: rgb(34, 36, 46);
-  cursor: pointer;
+  cursor: pointer; /*cursor cambia de flecha a mano*/
 }
 
 .main-note {
@@ -261,11 +261,11 @@ h2 {
 
 #numero {
   visibility: hidden;
-  height:0;
+  height: 0;
   }
 #numero.activo {
   visibility: visible;
-  height:unset;
+  height: unset;
 }
 #numberbutton {
   text-align: center;
@@ -295,11 +295,11 @@ h2 {
   flex-flow: column;
   align-content: center;
   height: 0;
-  visibility:hidden;
+  visibility: hidden;
 }
 #lista.activo {
   visibility: visible;
-  height:unset;
+  height: unset; /*ocupa el alto total del contenido*/
 }
 
 #valor {
@@ -341,6 +341,11 @@ h2 {
   width:100%;
 }
 
+#listaChilly li{
+  word-break: break-all; /*corta la palabra si esta es muy larga y ocupa el ancho ya asignado*/
+  line-height:27px; /*altura entre lineas*/
+}
+
 #cifrarbtn {
   text-align: center;
   color: rgb(21, 22, 28);
@@ -377,7 +382,3 @@ h2 {
   cursor: pointer;
 }
 
-#listaChilly li{
-  word-break: break-all;
-  line-height:27px;
-}
