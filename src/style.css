@@ -308,14 +308,21 @@ h2 {
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
   height: 40px;
-  background: transparent;
-  font-size: 15px;
+  background: #c7ecf8;
+  font-size: 20px;
   letter-spacing: 1px;
-  font-weight: 300;
-  transition: all 0.8s ease;
-  border-radius: 4px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: inset;
   outline: none;
   margin-left: 120px;
+}
+
+#valor:focus {
+  background: #b2e3f1;
+  border-radius: 6px;
+  border: inset;
+  outline: none;
 }
 
 #lista__wrap {
@@ -382,3 +389,42 @@ h2 {
   cursor: pointer;
 }
 
+#boton {
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  border: outset;
+  border-radius: 6px;
+  background: #faf0ae;
+  font-size: 21px;
+  letter-spacing: 3px;
+  }
+
+#boton:hover {
+  color: rgb(34, 36, 46);
+  cursor: pointer;
+}
+
+#cifrado {
+  width: 310px;
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: inset;
+  outline: none;
+  margin-left: -15px;
+  margin-top: 322px;
+  height: 100px;
+}
+  
+#cifrado:focus {
+  background: transparent;
+  border-radius: 6px;
+  border: inset;
+  outline: none;
+}
