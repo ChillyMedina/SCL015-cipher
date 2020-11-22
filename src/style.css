@@ -353,7 +353,7 @@ h2 {
   line-height:27px; /*altura entre lineas*/
 }
 
-#cifrarbtn {
+#encodeBtn {
   text-align: center;
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
@@ -366,12 +366,13 @@ h2 {
   left: -60px;
 }
 
-#cifrarbtn:hover {
+#encodeBtn:hover {
   color: rgb(34, 36, 46);
   cursor: pointer;
+  border: none;
 }
 
-#descifrarbtn {
+#decodeBtn {
   text-align: center;
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
@@ -384,9 +385,10 @@ h2 {
   right: -95px;
 }
 
-#descifrarbtn:hover {
+#decodeBtn:hover {
   color: rgb(34, 36, 46);
   cursor: pointer;
+  border: none;
 }
 
 #boton {
@@ -405,7 +407,7 @@ h2 {
   cursor: pointer;
 }
 
-#cifrado {
+#containerOne {
   width: 310px;
   text-align: center;
   color: rgb(21, 22, 28);
@@ -422,7 +424,31 @@ h2 {
   height: 100px;
 }
   
-#cifrado:focus {
+#containerOne:focus {
+  background: transparent;
+  border-radius: 6px;
+  border: inset;
+  outline: none;
+}
+
+#containerTwo {
+  width: 310px;
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  background: transparent;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: inset;
+  outline: none;
+  margin-left: -15px;
+  margin-top: 322px;
+  height: 100px;
+}
+  
+#containerTwo:focus {
   background: transparent;
   border-radius: 6px;
   border: inset;

@@ -65,18 +65,16 @@
           <input type="text" id="valor">
           <button id="boton">Agregar</button>
           <img src="img/todolist.png" alt="">
-          <div><input type="text" id="cifrado"></div>
         </div>
         <div class="listillas">
           <ul id="listaChilly"></ul>
         </div>
-        <div class="bttm-left">
-          <button class="button" id="cifrarbtn">Cifrar</button>
-        </div>
-        <div class="bttm-right">
-          <button class="button" id="descifrarbtn">Descifrar</button>
-        </div>
-      </div>
+      <aside class="textContainers">
+        <textarea name="container" id="containerOne" class="container one" rows="6" cols="35"></textarea>
+        <button id="encodeBtn" onclick="cipher()" >Cifrar</button>
+        <button id="decodeBtn" onclick="decode()" >Descifrar</button>
+        <textarea name="container" id="containerTwo" class="container two" rows="6" cols="35"></textarea>
+      </aside>
     </section>
   </div>
   <script src="./index.js" type="module"></script>
