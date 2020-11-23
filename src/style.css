@@ -26,6 +26,7 @@ h2 {
   visibility: hidden;
   height: 0;
 }
+
 #nombre.activo{
   visibility: visible;
   height: unset;
@@ -72,7 +73,7 @@ h2 {
 
 .main-note {
   width: 100%;
-  height: 350px;
+  height: 212px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,14 +92,14 @@ h2 {
 .main-noteh1 h1 {
   font-size: 30px;
   margin-left: 35px;
-  margin-bottom: 120px;
 }
 
 .main-noteh1 img {
   position: absolute;
   top: 0;
   z-index: -1;
-} 
+}
+
 .nombre__wrap {
   display: flex;
   flex-direction: column;
@@ -262,11 +263,13 @@ h2 {
 #numero {
   visibility: hidden;
   height: 0;
-  }
+}
+
 #numero.activo {
   visibility: visible;
   height: unset;
 }
+
 #numberbutton {
   text-align: center;
   color: rgb(21, 22, 28);
@@ -297,6 +300,7 @@ h2 {
   height: 0;
   visibility: hidden;
 }
+
 #lista.activo {
   visibility: visible;
   height: unset; /*ocupa el alto total del contenido*/
@@ -353,6 +357,8 @@ h2 {
   line-height:27px; /*altura entre lineas*/
 }
 
+/* Cifrar/Descifrar */
+
 #encodeBtn {
   text-align: center;
   color: rgb(21, 22, 28);
@@ -407,12 +413,19 @@ h2 {
   cursor: pointer;
 }
 
+.textContainers {
+  display:flex;
+  align-items: center;
+}
+
 #containerOne {
   width: 310px;
   text-align: center;
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
-  background: transparent;
+  background: url(img/fondo-cipher-encode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -420,12 +433,12 @@ h2 {
   border: inset;
   outline: none;
   margin-left: -15px;
-  margin-top: 322px;
   height: 100px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
   
 #containerOne:focus {
-  background: transparent;
   border-radius: 6px;
   border: inset;
   outline: none;
@@ -436,7 +449,9 @@ h2 {
   text-align: center;
   color: rgb(21, 22, 28);
   font-family: "Roboto Mono", monospace;
-  background: transparent;
+  background: url(img/fondo-cipher-encode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 20px;
   letter-spacing: 2px;
   font-weight: 500;
@@ -444,12 +459,11 @@ h2 {
   border: inset;
   outline: none;
   margin-left: -15px;
-  margin-top: 322px;
   height: 100px;
+  margin-bottom: 50px;
 }
   
 #containerTwo:focus {
-  background: transparent;
   border-radius: 6px;
   border: inset;
   outline: none;
