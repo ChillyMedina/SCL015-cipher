@@ -39,29 +39,16 @@
         </div>
       </div>
     </section>
-    <!----------------Saludo y Numero---------------->
-    <section id="numero" class="panel">
-      <div id="numero__wrap">
-        <div class="numero-top">
-          <img src="img/yellow.png" alt="">
-          <h3>Hola <span id="nombre-usuario"></span></h3>
-          <h4>Escoge un número entre el 1 y el 34 para cifrar tus mensajes.</h4>
-        </div>
-        <div class="numero-bottom"> 
-          <div class="bottom-left">
-            <input type="number" id="quantity" name="quantity" min="1" max="26" placeholder="1-34" required>
-          </div>
-          <div class="bottom-right">
-            <button class="button" id="numberbutton">Aceptar</button>
-            <img src="img/boton-purple.png" alt="">
-          </div>
-        </div>   
-      </div>
-    </section>
-    <!----------------Lista---------------->
+     <!----------------Saludo y Lista---------------->
     <section id="lista" class="panel">
+      <div class="numero-top">
+        <img src="img/yellow.png" alt="">
+        <h3>Hola <span id="nombre-usuario"></span></h3>
+        <h4>Crea tu propia lista de tareas y abajo escoge</h4>
+        <h4>un número entre el 1 y el 34 para cifrar un mensaje.</h4>    
+      </div>
       <div id="lista__wrap">
-        <div>
+        <div id="todolist">
           <input type="text" id="valor">
           <button id="boton">Agregar</button>
           <img src="img/todolist.png" alt="">
@@ -69,6 +56,9 @@
         <div class="listillas">
           <ul id="listaChilly"></ul>
         </div>
+      <div class="selector">
+        <input type="number" id="offset" role="spinbutton" value= "1" min="1" max="34">
+      </div>
       <aside class="textContainers">
         <textarea name="container" id="containerOne" class="container one" rows="6" cols="35"></textarea>
         <button id="encodeBtn" >Cifrar</button>

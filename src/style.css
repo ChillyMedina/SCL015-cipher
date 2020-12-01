@@ -167,14 +167,7 @@ h2 {
   z-index: -1;
 }
 
-/* Saludo y Numero */
-
-.numero__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* Saludo y Lista */
 
 .numero-top {
   width: 100%;
@@ -193,104 +186,18 @@ h2 {
 }
 
 .numero-top h3 {
-  margin-top: -80px;
+  margin-top: -70px;
   font-weight: 500;
   letter-spacing: 2px;
   font-size: 30px;
 }
 
 .numero-top h4 {
-  margin-top: -80px;
+  margin-top: -58px;
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 18px;
 }
-
-.numero-bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  height: 550px;
-  padding-bottom: 150px;
-}
-
-.bottom-left,
-.bottom-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.bottom-left {
-  background: url(img/sticky-pink.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 60%;
-}
-
-.bottom-right {
-  position: relative;
-}
-
-.bottom-right a {
-  text-decoration: none;
-}
-
-.bottom-right img {
-  position: absolute;
-  z-index: -1;
-}
-
-#quantity {
-  width: 70px;
-  text-align: center;
-  color: rgb(21, 22, 28);
-  font-family: "Roboto Mono", monospace;
-  height: 50px;
-  background: transparent;
-  font-size: 15px;
-  letter-spacing: 1px;
-  font-weight: 300;
-  transition: all 0.8s ease;
-  border-radius: 4px;
-  outline: none;
-}
-
-#numero {
-  visibility: hidden;
-  height: 0;
-}
-
-#numero.activo {
-  visibility: visible;
-  height: unset;
-}
-
-#numberbutton {
-  text-align: center;
-  color: rgb(21, 22, 28);
-  font-family: "Roboto Mono", monospace;
-  border: none;
-  background: transparent;
-  font-size: 21px;
-  letter-spacing: 5px;
-  transform: rotate(-5deg) translateY(-10px) scale(1) translatez(0);
-  transition: all 0.3s cubic-bezier(0.09, 0, 0, 0.39);
-  backface-visibility: hidden;
-  outline: none;
-}
-
-#numberbutton:hover {
-  transform: rotate(-5deg) translateY(-10px) scale(1.02);
-  color: rgb(34, 36, 46);
-  cursor: pointer;
-}
-
-/* Lista */
 
 #lista {
   align-items: center;
@@ -339,10 +246,8 @@ h2 {
   height: 200px;
 }
 
-#lista__wrap img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#todolist img {
+  margin-top: 15px;
 }
 
 .listillas {
@@ -368,7 +273,7 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -500px;
+  bottom: -530px;
   left: -60px;
 }
 
@@ -387,7 +292,7 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -500px;
+  bottom: -530px;
   right: -95px;
 }
 
@@ -435,7 +340,7 @@ h2 {
   margin-left: -15px;
   height: 100px;
   margin-right: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
   
 #containerOne:focus {
@@ -460,11 +365,28 @@ h2 {
   outline: none;
   margin-left: -15px;
   height: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
   
 #containerTwo:focus {
   border-radius: 6px;
   border: inset;
   outline: none;
+}
+
+#offset{
+  width: 70px;
+  text-align: center;
+  color: rgb(21, 22, 28);
+  font-family: "Roboto Mono", monospace;
+  height: 50px;
+  background: url(img/fondo-cipher-encode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 21px;
+  font-weight: 400;
+  border-radius: 4px;
+  border: inset;
+  outline: none;
+  margin-bottom: 30px;
 }

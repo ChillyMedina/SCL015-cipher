@@ -1,9 +1,7 @@
 /*import cipher from "./cipher.js";*/
 
-let offset; //se declara variable offset para que guarde numero en la segunda pantalla y poder utilizarlo con el cifrado mas adelante
 //---------------GUARDAR NOMBRE---------------
 const sectionOne = document.getElementById("nombre"); //se declara constante para cada section
-const sectionTwo = document.getElementById("numero");
 const sectionThree = document.getElementById("lista");
 
 document.getElementById("namebtn").onclick = function () { //funcion onclick para el boton "namebtn"
@@ -13,18 +11,7 @@ document.getElementById("namebtn").onclick = function () { //funcion onclick par
   nombreUsuario.innerHTML = nombreDeUsuario; 
   //---------------PASAR PAGINA 1 a 2---------------
   sectionOne.classList.remove("activo") //a sectionOne "nombre" se le quita la clase activo que ya tiene asignada en HTML y en CSS(con ciertos valores)
-  sectionTwo.classList.add("activo") //a sectionTwo "numero" se le añade la clase activo que esta en CSS como #numero.activo y se muestran los valores ingresados.
- 
-}
-
-//---------------GUARDAR NUMERO---------------
-document.getElementById("numberbutton").onclick = () => { // //funcion onclick para el boton "numberbutton"
-  let input = document.getElementById("quantity"); //toma el valor del input "quantity"
-  let nombreDeUsuario = input.value;
-  offset = nombreDeUsuario //variable declarada en un comienzo para guardar numero de offset y usarlo con cifrado
-//---------------PASAR PAGINA 2 a 3---------------  
-  sectionTwo.classList.remove("activo") //a sectionTwo "numero" se le quita la clase activo que ya tiene asignada en CSS(con ciertos valores)
-  sectionThree.classList.add("activo") //a sectionThree "lista" se le añade la clase activo que esta en CSS como #lista.activo y se muestran los valores ingresados.
+  sectionThree.classList.add("activo") //a sectionTwo "numero" se le añade la clase activo que esta en CSS como #numero.activo y se muestran los valores ingresados.
 }
 
 //---------------LISTA---------------
@@ -68,7 +55,6 @@ function cipher() {
       console.log(4, message)
   }
   document.getElementById("containerTwo").innerHTML = message;
-
   return message;
 }
 
@@ -87,10 +73,7 @@ function decode () {
       messageOut += sinceAsciiOf;
       console.log(messageOut)
 }
-
 document.getElementById("containerTwo").innerHTML = messageOut;
-
 return messageOut;
-
 }
 
