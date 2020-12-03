@@ -30,18 +30,19 @@ boton.onclick = (e) => { //se le asigna un evento (e) onclick al boton
 const botonCifrar = document.getElementById("encodeBtn"); // se declara variable para el boton de cifrado(encodeBtn)
 botonCifrar.addEventListener("click", cipher);//esta variable se le añade un evento(funcion cipher) al hacer click.
 
+
 function cipher() {
   //Declaro la variable del mensaje ingresado, llamo al valor con el id "containerOne" y lo paso a mayúsculas
   let messageIn = document.getElementById("containerOne").value.toUpperCase();
   //Convierto el desplazamiento(offset) a numero entero con parseInt
   let offset = parseInt(document.getElementById("offset").value);
-
+  //console.log(offset)
   let message = ""
   //Inicio el bucle, declaro e inicializo la variable i, que será menor al largo/longitud del mensaje, incrementado a un valor
   for (let i = 0; i < messageIn.length; i++) {
       //Pasamos el mensaje a código ASCII
       let messageAscii = messageIn.charCodeAt(i);
-      // console.log(1, messageAscii)
+      //console.log(1, messageAscii)
       //Aplicamos la formula para obtener la nueva posicion de la letra
       let letterNewPosition = (messageAscii - 65 + offset) % 26 + 65;
       // console.log(2, letterNewPosition)
@@ -53,27 +54,32 @@ function cipher() {
       //concateno las variables message y sinceAscii para que muestre palabras enteras y no solo letras una por una
       message += sinceAscii;
       console.log(4, message)
-  }
-  document.getElementById("containerTwo").innerHTML = message;
-  return message;
+    }
+    document.getElementById("containerTwo").innerHTML = message;
+
+
+    return message;
 }
 
 const botonDescifrar = document.getElementById("decodeBtn");
-botonCifrar.addEventListener("click", decode);
+botonDescifrar.addEventListener("click", decode);
 
 function decode () {
-  let messageOf = document.getElementById("containerTwo").value.toUpperCase();
-  let offset = parseInt(document.getElementById("offset").value);
-  let messageOut = ""
-  for (let i = 0; i < messageOf.length; i++) {
-      let messageAsciiOf = messageOf.charCodeAt(i);
-      let letterNewPositionOf = (messageAsciiOf + 65 - offset) % 26 + 65;
-      if (messageAsciiOf === 32) { letterNewPositionOf = 32; }
-      let sinceAsciiOf = String.fromCharCode(letterNewPositionOf);
-      messageOut += sinceAsciiOf;
-      console.log(messageOut)
-}
-document.getElementById("containerTwo").innerHTML = messageOut;
-return messageOut;
+	let messageOf = document.getElementById("containerTwo").value.toUpperCase();
+	let offset = parseInt(document.getElementById("offset").value);
+	let messageOut = ""
+	for (let i = 0; i < messageOf.length; i++) {
+		let messageAsciiOf = messageOf.charCodeAt(i);
+		let letterNewPositionOf = (messageAsciiOf + 65 - offset) % 26 + 65;
+		if (messageAsciiOf === 32) { letterNewPositionOf = 32; }
+		let sinceAsciiOf = String.fromCharCode(letterNewPositionOf);
+		messageOut += sinceAsciiOf;
+		console.log(messageOut)
+	}
+
+	document.getElementById("containerTwo").innerHTML = messageOut;
+
+	return messageOut;
+
 }
 
