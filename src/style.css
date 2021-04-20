@@ -273,8 +273,8 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -5vh;
-  left: 9vw;
+  bottom: -10vh;
+  left: -2vw;
   outline: 0;
 }
 
@@ -293,8 +293,8 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -5vh;
-  right: 6.5vw;
+  bottom: -10vh;
+  right: -4.7vw;
   outline: 0;
 }
 

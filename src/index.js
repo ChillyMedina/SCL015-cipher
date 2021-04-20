@@ -55,17 +55,17 @@ function cipher() {
       message += sinceAscii;
       console.log(4, message)
     }
-    document.getElementById("containerTwo").innerHTML = message;
-
-
+    document.getElementById("containerOne").value = '';
+    document.getElementById("containerOne").value = message;
     return message;
 }
+cipher();
 
 const botonDescifrar = document.getElementById("decodeBtn");
 botonDescifrar.addEventListener("click", decode);
 
 function decode () {
-	let messageOf = document.getElementById("containerTwo").value.toUpperCase();
+	let messageOf = document.getElementById("containerOne").value.toUpperCase();
 	let offset = parseInt(document.getElementById("offset").value);
 	let messageOut = ""
 	for (let i = 0; i < messageOf.length; i++) {
@@ -77,9 +77,10 @@ function decode () {
 		console.log(messageOut)
 	}
 
-	document.getElementById("containerTwo").innerHTML = messageOut;
+	document.getElementById("containerOne").value = '';
+  document.getElementById("containerOne").value = messageOut;
 
 	return messageOut;
 
 }
-
+decode();
