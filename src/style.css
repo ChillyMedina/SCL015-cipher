@@ -273,8 +273,8 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -10vh;
-  left: -2vw;
+  bottom: -11vh;
+  left: -4vw;
   outline: 0;
 }
 
@@ -293,8 +293,8 @@ h2 {
   font-size: 21px;
   letter-spacing: 5px;
   position: absolute;
-  bottom: -10vh;
-  right: -4.7vw;
+  bottom: -11vh;
+  right: -1.7vw;
   outline: 0;
 }
 
@@ -325,7 +325,8 @@ h2 {
   display:flex;
   align-items: center;
   position: absolute;
-  margin-top: 56vh;
+  margin-top: 49vh;
+  margin-left: 5vw;
 }
 
 #containerOne {
@@ -349,30 +350,6 @@ h2 {
 }
   
 #containerOne:focus {
-  border-radius: 6px;
-  outline: none;
-}
-
-#containerTwo {
-  width: 310px;
-  text-align: center;
-  color: rgb(21, 22, 28);
-  font-family: "Roboto Mono", monospace;
-  background: #c7ecf8;
-  font-size: 15px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  border-radius: 6px;
-  border-color: transparent;
-  outline: none;
-  margin-left: -15px;
-  height: 100px;
-  margin-bottom: 30px;
-  border: inset;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-  
-#containerTwo:focus {
   border-radius: 6px;
   outline: none;
 }
